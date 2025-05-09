@@ -22,6 +22,7 @@ The Webapp is based on a NextJS and Fastapi-Python template. And hosted via a Gi
 ## Getting Started
 Run 
 ```bash
+cd /nexjs-fastapi
 npm run dev
 ```
 and go to http://localhost:3000
