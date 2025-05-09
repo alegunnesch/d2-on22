@@ -102,10 +102,10 @@ def crawl_timeframe(start_date, end_date):
 
 # Hauptlauf
 # Zeitbereich angeben (z. B. vom 1. Januar 2020 bis 1. Dezember 2020)
-start_date = datetime(2010, 1, 1)
-end_date = datetime(2010, 6, 1)
+start_date = datetime(2020, 1, 1)
+end_date = datetime(2024, 6, 1)
 
 artikel = crawl_timeframe(start_date, end_date)
 df = pd.DataFrame(artikel)
-df.to_csv("tagesschau_headlines_testmonth2010.csv", index=False, encoding="utf-8")
-print(f"✅ {len(df)} Artikel gespeichert in tagesschau_headlines_2020.csv")
+df.to_csv("tagesschau_headlines_test_20200101-20240601.csv", index=False, encoding="utf-8")
+print(f"✅ {len(df)} Artikel gespeichert in CSV-Datei.")
